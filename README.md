@@ -53,19 +53,20 @@ This project is built with:
 ## How to connect blockchain and server 
 
 Connect metamask wallet to Ganache by 
-->importing private key 
-->Adding local test network as ganache with the help of RPC url(from ganache)
+
+- importing private key
+- Adding local test network as ganache with the help of RPC url(from ganache)
 
 ## How can I deploy this project?
 
 In VSCode open terminal and give commands :
-  cd blockchain
-  npx hardhat compile
-  npx hardhat run scripts/deploy.js --network ganache
-  
-  cd server 
-  npm run dev
+  - cd blockchain
+  - npx hardhat compile
+  - npx hardhat run scripts/deploy.js --network ganache
 
-  cd src 
-  npm run dev
+  - cd server
+  - npm run dev
+
+  - cd src
+  - npm run dev
   
