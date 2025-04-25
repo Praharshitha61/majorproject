@@ -1,18 +1,8 @@
-# Welcome to your Lovable project
-
 ## Project info
-
-**URL**: https://lovable.dev/projects/3da74446-06d8-48f4-b67c-10bfeaf756dd
 
 ## How can I edit this code?
 
 There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/3da74446-06d8-48f4-b67c-10bfeaf756dd) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
 
 **Use your preferred IDE**
 
@@ -60,14 +50,22 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
+## How to connect blockchain and server 
+
+Connect metamask wallet to Ganache by 
+->importing private key 
+->Adding local test network as ganache with the help of RPC url(from ganache)
+
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/3da74446-06d8-48f4-b67c-10bfeaf756dd) and click on Share -> Publish.
+In VSCode open terminal and give commands :
+  cd blockchain
+  npx hardhat compile
+  npx hardhat run scripts/deploy.js --network ganache
+  
+  cd server 
+  npm run dev
 
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+  cd src 
+  npm run dev
+  
